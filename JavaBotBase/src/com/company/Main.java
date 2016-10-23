@@ -10,6 +10,16 @@ public class Main {
 
     private static JDA jda;
     public static final CommandParser parser = new CommandParser();
+	
+	//used for !in/!out
+	public ArrayList<String> WotM_NM = new ArrayList<String>();
+	public ArrayList<String> WotM_HM = new ArrayList<String>();
+	public ArrayList<String> VoG_NM = new ArrayList<String>();
+	public ArrayList<String> VoG_HM = new ArrayList<String>();
+	public ArrayList<String> KF_HM = new ArrayList<String>();
+	public ArrayList<String> KF_NM = new ArrayList<String>();
+	public ArrayList<String> C_HM = new ArrayList<String>();
+	public ArrayList<String> C_NM = new ArrayList<String>();
 
 
     public static HashMap<String, Command> commands = new HashMap<String, Command>();
@@ -23,7 +33,9 @@ public class Main {
         }
 
         commands.put("ping", new PingCommand());
-
+	commands.put("in", new InCommand());
+	commands.put("out", new OutCommand());
+	commands.put("letsGo", new LetsGoCommand());
 
 
     }
