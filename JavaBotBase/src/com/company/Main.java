@@ -1,6 +1,9 @@
 package com.company;
 
 import com.company.commands.PingCommand;
+import com.company.commands.InCommand;
+import com.company.commands.OutCommand;
+import com.company.commands.LetsGoCommand;
 import net.dv8tion.jda.JDA;
 import net.dv8tion.jda.JDABuilder;
 
